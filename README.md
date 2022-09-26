@@ -3,7 +3,7 @@
 ## Usage
 
 ```JavaScript
-import { Chart } from "./Chart.js";
+import { Chart } from "https://code4fukui.github.io/Chart-es/Chart.js";
 
 const config = {
   type: "bar",
