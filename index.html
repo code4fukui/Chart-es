@@ -1,0 +1,47 @@
+
+<div id=graph></div>
+
+<script type="module">
+import { Chart } from "./Chart.js";
+
+const times = [1, 2, 3];
+const rxdata = [10, 20, 30];
+const txdata = [30, 20, 10];
+
+const data = {
+  labels: times, //[1, 2, 3],
+  datasets: [
+    { label: "送信", data: rxdata, lineTension: 0, backgroundColor: "#66e" },
+    { label: "受信", data: txdata, lineTension: 0, backgroundColor: "#e66" },
+  ],
+};
+const config = {
+  type: "bar",
+  data: data,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+      },
+    },
+    responsive: true,
+    interaction: {
+      intersect: true,
+    },
+    scales: {
+      x: {
+        stacked: true,
+      },
+      y: {
+        stacked: true
+      }
+    }
+  }
+};
+const canvas = document.createElement("canvas");
+canvas.width = 600;
+canvas.height = 300;
+graph.appendChild(canvas);
+const chart = new Chart(canvas, config);
+
+</script>
