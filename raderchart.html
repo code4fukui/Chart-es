@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+<title>RaderChart with Chart.js</title>
+</head><body>
+<h1>RaderChart with Chart.js</h1>
+
+<canvas id="myRadarChart"></canvas>
+
+<hr>
+<a href=https://github.com/code4fukui/Chart-es/>src on GitHub</a>
+
+<script type="module">
+import { Chart } from "./Chart.js";
+
+const makeRandom = (len) => {
+  const res = [];
+  for (let i = 0; i < len; i++) {
+    res.push(Math.random() * 5);
+  }
+  return res;
+};
+
+new Chart(myRadarChart, {
+  type: 'radar',
+  data: {
+    labels: ["A", "B", "C", "D", "E", "F", "G", "H", "J"],
+    datasets: [
+      {
+        label: 'name1',
+        data: makeRandom(9),
+        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        borderColor: 'rgba(255, 99, 132, 1)',
+        borderWidth: 2
+      },
+      {
+        label: 'name2',
+        data: makeRandom(9),
+        x_backgroundColor: 'rgba(99, 255, 132, 0.2)',
+        borderColor: 'rgba(99, 255, 132, 1)',
+        borderWidth: 2
+      },
+    ]
+  },
+  options: {
+    scales: {
+      r: {
+        beginAtZero: true,
+      }
+    }
+  }
+});
+</script>
+
+<style>
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+a {
+  color: gray !important;
+}
+</style>
+</body></html>

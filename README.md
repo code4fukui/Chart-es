@@ -1,5 +1,8 @@
 # Chart-es - Chart.js - ES module version
 
+- [LineChart demo](https://code4fukui.github.io/Chart-es/)
+- [RaderChart demo](https://code4fukui.github.io/Chart-es/raderchart.html)
+
 ## Usage
 
 ```JavaScript
@@ -24,10 +27,8 @@ graph.appendChild(canvas);
 const chart = new Chart(canvas, config);
 ```
 
-## How to make
+## How to make Chart.js ES module version
 
-1. download Chart.js from CDN
-2. add followings
-```JavaScript
-export const Chart = window.Chart.Chart;
+```sh
+deno run -A make.js
 ```
