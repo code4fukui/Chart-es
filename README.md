@@ -28,8 +28,15 @@ graph.appendChild(canvas);
 const chart = new Chart(canvas, config);
 ```
 
+- with [chartjs-plugin-datalabels](https://github.com/chartjs/chartjs-plugin-datalabels/)
+```JavaScript
+import { Chart } from "https://code4fukui.github.io/Chart-es/Chart_plugin_datalabels.js";
+```
+→ [raderchart_datalabels.html](raderchart_datalabels.html)
+
 ## How to make Chart.js ES module version
 
 ```sh
 deno run -A make.js
+deno run -A make_plugin_datalabels.js
 ```
