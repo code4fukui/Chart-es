@@ -2,6 +2,7 @@
 
 - [LineChart demo](https://code4fukui.github.io/Chart-es/)
 - [RaderChart demo](https://code4fukui.github.io/Chart-es/raderchart.html)
+- [RaderChart with Data Labels plugin demo](https://code4fukui.github.io/Chart-es/raderchart_datalabels.html)
 
 ## Usage
 
