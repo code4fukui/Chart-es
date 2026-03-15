@@ -1,18 +1,18 @@
-# Chart-es - Chart.js - ES module version
+# Chart-es - ES moduleバージョンのChart.js
 
-ES module version of the Chart.js library.
+ES moduleバージョンのChart.jsライブラリです。
 
-## Demo
+## デモ
 - [LineChart demo](https://code4fukui.github.io/Chart-es/)
 - [RaderChart demo](https://code4fukui.github.io/Chart-es/raderchart.html)
 - [RaderChart with Data Labels plugin demo](https://code4fukui.github.io/Chart-es/raderchart_datalabels.html)
 
-## Features
-- ES module version of Chart.js
-- Includes demos for Line Chart and Radar Chart
-- Supports Chart.js Data Labels plugin
+## 機能
+- Chart.jsのES moduleバージョン
+- Line ChartとRadar Chartのデモ
+- Chart.js Data Labelsプラグインをサポート
 
-## Usage
+## 使い方
 
 ```JavaScript
 import { Chart } from "https://code4fukui.github.io/Chart-es/Chart.js";
@@ -36,11 +36,11 @@ graph.appendChild(canvas);
 const chart = new Chart(canvas, config);
 ```
 
-- with [chartjs-plugin-datalabels](https://github.com/chartjs/chartjs-plugin-datalabels/)
+- Data Labelsプラグインを使う場合
 ```JavaScript
 import { Chart } from "https://code4fukui.github.io/Chart-es/Chart_plugin_datalabels.js";
 ```
 → [raderchart_datalabels.html](raderchart_datalabels.html)
 
-## License
+## ライセンス
 MIT
