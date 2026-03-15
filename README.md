@@ -1,5 +1,7 @@
 # Chart-es - Chart.js - ES module version
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 ES module version of the Chart.js library.
 
 ## Demo
