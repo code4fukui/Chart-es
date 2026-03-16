@@ -45,4 +45,4 @@ import { Chart } from "https://code4fukui.github.io/Chart-es/Chart_plugin_datala
 → [raderchart_datalabels.html](raderchart_datalabels.html)
 
 ## License
-MIT
+MIT License — see [LICENSE](LICENSE).
