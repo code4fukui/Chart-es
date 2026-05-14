@@ -1,20 +1,18 @@
-# Chart-es - Chart.js - ES module version
+# Chart-es - Chart.js - ESモジュール版
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+Chart.jsライブラリのESモジュール版です。
 
-ES module version of the Chart.js library.
+## デモ
+- [LineChartのデモ](https://code4fukui.github.io/Chart-es/)
+- [RaderChartのデモ](https://code4fukui.github.io/Chart-es/raderchart.html)
+- [Data Labelsプラグイン付きRaderChartのデモ](https://code4fukui.github.io/Chart-es/raderchart_datalabels.html)
 
-## Demo
-- [LineChart demo](https://code4fukui.github.io/Chart-es/)
-- [RaderChart demo](https://code4fukui.github.io/Chart-es/raderchart.html)
-- [RaderChart with Data Labels plugin demo](https://code4fukui.github.io/Chart-es/raderchart_datalabels.html)
+## 機能
+- Chart.jsのESモジュール版
+- Line ChartとRadar Chartのデモを収録
+- Chart.js Data Labelsプラグインをサポート
 
-## Features
-- ES module version of Chart.js
-- Includes demos for Line Chart and Radar Chart
-- Supports Chart.js Data Labels plugin
-
-## Usage
+## 使い方
 
 ```JavaScript
 import { Chart } from "https://code4fukui.github.io/Chart-es/Chart.js";
@@ -38,11 +36,11 @@ graph.appendChild(canvas);
 const chart = new Chart(canvas, config);
 ```
 
-- with [chartjs-plugin-datalabels](https://github.com/chartjs/chartjs-plugin-datalabels/)
+- [chartjs-plugin-datalabels](https://github.com/chartjs/chartjs-plugin-datalabels/) を使用する場合
 ```JavaScript
 import { Chart } from "https://code4fukui.github.io/Chart-es/Chart_plugin_datalabels.js";
 ```
 → [raderchart_datalabels.html](raderchart_datalabels.html)
 
-## License
-MIT License — see [LICENSE](LICENSE).
+## ライセンス
+MIT License — 詳細は [LICENSE](LICENSE) を参照してください。
